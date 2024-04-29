@@ -9,20 +9,4 @@ const DbClient = () => {
     return new MongoClient(uri);
 };
 
-// async function main() {
-//     try {
-//         const db = client.db("test_drinks");
-//         const coffee = db.collection("coffee");
-
-//         const query = { name: "Latte" };
-//         const drink = await coffee.findOne(query);
-
-//         console.log(drink);
-//     } finally {
-//         await client.close();
-//     }
-// }
-
-// main().catch(console.dir);
-
 module.exports.DbClient = DbClient;
